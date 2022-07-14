@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    width: 250px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+     -ms-flex-align: center;
+       align-items: center;
+       gap: 14px;
+       padding: 10px 15px 10px 10px;
+       cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select:none;
+    user-select: none;
+    border-radius: 10px;
+    color:#C5C6C7;}
+
+input {
+    display: none;
+}      
+
+input:checked + label svg {
+    fill: hsl(0deg 100% 50%);
+    stroke: hsl(0deg 100% 50%);
+    -webkit-animation:heartButton 1s; 
+          animation: heartButton 1s;
+
+}
+
+@-webkit-keyframes heartButton {
+    0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+
+    25% {
+         -webkit-transform: scale(1.3);
+           transform: scale(1.3);
+    }
+
+    50% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+
+    75% {
+            -webkit-transform: scale(1.3);
+              transform: scale(1.3);
+    }
+
+    100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+}
+
+
+@keyframes heartButton {
+    0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+
+    25% {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    }
+
+    50% {
+            -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+
+    75% {
+            -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    }
+
+    100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+    }
+}
+
+input + label .action {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+}
+
+input + label .action span {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+
+input + label .action span.option-1 {
+    -webkit-transform: translate(0px,0%);
+       -ms-transform: translate(0px,0%);
+         transform: translate(0px,0%);
+opacity: 1;         
+}
+
+
+input + label .action span.option-2 {
+    -webkit-transform: translate(0px,100%);
+       -ms-transform: translate(0px,100%);
+         transform: translate(0px,100%);
+opacity: 0;         
+}
+
+input:checked + label .action span.option-1 {
+    -webkit-transform: translate(0px,-100%);
+      -ms-transform: translate(0px,-100%);
+      transform: translate(0px,-100%);
+      opacity: 0;
+}
+
+input:checked + label .action span.option-2 {
+    -webkit-transform: translate(0px,100%);
+      -ms-transform: translate(0px,100%);
+      transform: translate(0px,100%);
+      opacity: 0;
+}
+
+input:checked + label .action span.option-2 {
+    -webkit-transform: translate(0px,0%);
+    -ms-transform: translate(0px,0%);
+      transform: translate(0px,0%);
+  opacity: 1;    
+}
+
+body {background-color:#0B0C10;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;}
+    @keyframes fadeInAnimation {
+      0% {transform:translateY(20px);
+          opacity: 0.5;
+      }
+      100% {transform:translateY(0px);
+          opacity: 1;
+       }}
+       @keyframes faded {
+        0% {transform:translateY(20px);
+            opacity: 0.9;
+        }
+        100% {transform:translateY(0px);
+            opacity: 1;
+         }}
+a {text-decoration: none;
+      margin-top: -20px;
+      color:#C5C6C7}
+b {color:#C5C6C7}
+p {color:#C5C6C7}
+h1 {color:#C5C6C7}
+h2 {color:#C5C6C7}
+li{color:#C5C6C7}
+b{color:#C5C6C7}
+h3 {color:#C5C6C7;}
+.d {color:#C5C6C7;}
+span {color:#C5C6C7;}
+h4 {color:#C5C6C7;
+  animation: faded ease 2s;
+  animation-iteration-count: 1}
+input {border-radius:15px;
+    font-size:15px;
+    font-weight:bold;
+    font-family:rubik;
+    height:30px;
+    width:250px;
+    padding-left:12px;
+    border:none;
+    outline:none}
+select {border-radius:15px
+    }
+.a2 {text-align:right;
+        margin-right:30px;
+        margin-top:-25px;
+        font-size:15px;}
+.a3 {margin-top:-48px;
+        margin-left:120px;
+        font-size:15px;}
+.a4 a:hover {background: transparent;
+        transition:none;
+        -webkit-transition:none;
+        padding:0px 0px}
+        ::-webkit-scrollbar {
+            width: 15px;
+          }
+          
+          ::-webkit-scrollbar-track {
+            background: #0B0C10;
+          }
+        
+          ::-webkit-scrollbar-thumb {
+            background: #101116;
+            border-radius:20px
+          }
+          
+          ::-webkit-scrollbar-thumb:hover {
+            background: #15161d;
+          }
+        
+          .text{animation: faded ease 3s;
+            animation-iteration-count: 1;}
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+            input[type=number] {
+              -moz-appearance: textfield;
+            }
+.checked {
+  color: orange;
+}
+.box2 {display:solid;
+  background:#1f2833;
+  width:1912px;
+  height:380px;
+  margin-bottom:-20px;
+  margin-left:-15px;
+  margin-top:1000px}
+.bo {display:solid;
+    background:#1f2833;
+    width:1920px;
+    height:380px;
+    margin-bottom:-20px;
+    margin-left:-15px;
+    margin-top:1000px}
+    .box5 > div {display:block;
+      background:white;
+      height:200px;
+      width:150px;
+      border-radius:15px;
+      margin-top:-20px;
+      margin-left:100px;
+      animation: faded ease 3s;
+      animation-iteration-count: 1;
+      transition: all 1s ease}
+      .box5 {display:flex;
+      width: 900px;
+      height: 250px;
+      margin-left:20px;
+      padding:60px 25px;
+      border-radius:15px;
+      animation: faded ease 3s;
+      animation-iteration-count: 1;}
+      .box5 > div:hover {transform: translateY(-10px);
+      transition: all 1s ease;}
+      .text{animation: faded ease 2.5s;
+        animation-iteration-count: 1;}
