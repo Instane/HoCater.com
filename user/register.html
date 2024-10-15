@@ -53,7 +53,7 @@
         margin-bottom:30px;
         border-radius:15px;}
     select {background-color:rgb(230, 220, 220)}
-    #message {
+    .message {
         display:none;
         background:rgb(211, 206, 206);
         position: auto;
@@ -99,7 +99,7 @@
     <p class="error" id="phpErrors" style="margin-bottom:30px;margin-top:-10px"><i class="fa-solid fa-circle-exclamation" style="margin-bottom: 2px; margin-right: 2px"></i><?php echo $_GET['error']; ?></p>
     <?php } ?>
 
-    <div id="message">
+    <div class="message">
         <p id="length" class="invalid" style="display:none;text-align:left">Minimum 6 Characters </p>
         <p id="plength" class="invalid" style="display:none;text-align:left">Minimum 8 Characters </p>
         <p id="pcase" class="invalid" style="display:none;text-align:left;margin-top:-30px">At least one capital letter </p>
