@@ -57,7 +57,7 @@
     <p class="error" id="phpErrors"><i class="fa-solid fa-circle-exclamation" style="margin-bottom: 2px; margin-right: 2px"></i>  <?php echo $_GET['error']; ?></p>
     <?php } ?>
     <div class="box"><br><h2 style="color:black">Login Page</h2>
-    <form action="../Rd/log.php" method="post">
+    <form action="../Rd/log.html" method="post">
     <p><input type="text" id="uname" name="uname" placeholder="Username" style="background-image:url(../Img/user.png);padding:2px 25px;padding-left:35px;padding-right:10px;background-size:18px 18px;background-repeat:no-repeat;background-position-x:8px;background-position-y:6px;width:280px;width:250px" required=" "><br><br>
     <input type="password" id="pass" name="pass" placeholder="Password" style="background-image:url(../Img/pass.png);padding:2px 25px;padding-left:35px;padding-right:10px;background-size:18px 18px;background-repeat:no-repeat;background-position-x:8px;background-position-y:6px;width:280px;width:250px;margin-top:5px" required=" "></p>
     <input type="checkbox" id="remember" style="width:15px;height:15px;margin-left:-260px" onclick="rmb()" <?php if(isset($_COOKIE["member_login"])) { ?> checked <?php } ?> /><p id='rembox'style="font-size:12px;color:black;margin-top:-18px;margin-bottom:40px;margin-left:-150px;font-weight:none"
@@ -67,7 +67,7 @@
     </div></form><br>
 
     <b style="color:#111111;"> Don't have an Account? </b>
-    <p><b><div class=a4><button type="button" style="font-weight:bold;padding:10px 50px;font-size:18px;" class="arrow"><a href = "./Register.php" style="color:#C5C6C7">Create a HoCater Account</button></div></a></b></p></center>
+    <p><b><div class=a4><button type="button" style="font-weight:bold;padding:10px 50px;font-size:18px;" class="arrow"><a href = "./Register.html" style="color:#C5C6C7">Create a HoCater Account</button></div></a></b></p></center>
     <script>
         function rmb() {
             var checkbox = document.getElementById('remember');
